@@ -39,8 +39,11 @@ body{
     background     : url(../images/indexBack.jpg) center center;
     background-size: cover;
   }
+  .container.content{
+    background: aqua;
+  }
   /* медиа запросы для блока, чтобы он при определенных значениях дисплея сдвигался в нужную область */
-  @media all and (min-width: 0) and (max-width: 767px){
+  @media (min-width: 0) and (max-width: 767px){
     .header{
       height: 850px;
     }
@@ -67,14 +70,14 @@ body{
     color          : white;
 }
   /* медиа запросы для блока, чтобы он при определенных значениях дисплея сдвигался в нужную область */
-  @media all and (min-width: 0) and (max-width: 767px){
+  @media (min-width: 0) and (max-width: 767px){
     .socialIcons{
       left : 15px;
       top  : 70px;
       width: 270px;
     }
     .socialIcons i{
-      color: #fff51f;  /* почему-то тут нельзя увеличить казмер иконок */
+      color: #fff51f;  /* почему-то тут нельзя увеличить размер иконок */
     
     }
 }
@@ -90,12 +93,12 @@ body{
   left      : 0;
 }
 /* медиа запросы для блока, чтобы он при определенных значениях дисплея сдвигался в нужную область */
-@media all and (min-width: 768px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px){
   .greetingBlock{
       top: 243px;
   }
 }
-@media all and (min-width: 0) and (max-width: 767px){
+@media (min-width: 0) and (max-width: 767px){
   .greetingBlock{
       top : 111px;
       left: 15px;
@@ -126,7 +129,7 @@ body{
   right   : 50px;
 }
 /* медиа запросы для блока, чтобы он при определенных значениях дисплея сдвигался в нужную область */
-@media all and (min-width: 0) and (max-width: 767px){
+@media (min-width: 0) and (max-width: 767px){
   .funrideWrap{
       top : 430px;
       left: 15px;
@@ -169,7 +172,7 @@ body{
   background-color: #000000;
 }
 /* медиа запросы для блока, чтобы он при определенных значениях дисплея сдвигался в нужную область */
-@media all and (min-width: 0) and (max-width: 767px){
+@media (min-width: 0) and (max-width: 767px){
   .buttonBuyNow, .buttonBuyNow:hover{
       top : 630px;
       left: 15px;
@@ -195,6 +198,185 @@ body{
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
   background-color: white;
 }
-.container{
-  background: red;
+.content{
+  margin-top: -15px;
 }
+.mainMenu{
+  background     : #26d2fc;
+  width          : 100%;
+  margin         : 0;
+  padding        : 0;
+  list-style-type: none;
+}
+.mainMenu li{
+width : 100%;
+height: 36px;
+}
+.mainMenu li a{
+  display        : block;
+  height         : inherit;
+  text-transform : uppercase;
+  font-family    : Roboto-black, sans-serif;
+  font-size      : 14px;
+  color          : #333333;
+  text-decoration: none;
+  padding        : 0 40px;
+  box-sizing     : border-box;
+  line-height    : 36px;
+}
+.mainMenu li a:hover{
+  background-color: #333333;
+  color           : white;
+}
+.mainMenu li:first-child{
+  height          : 66px;
+  background-color: #333333;
+}
+.mainMenu li:first-child a{
+color      : #fff;
+line-height: 66px;
+}
+.nowIsOpen{
+  height    : 300px;
+  background: url(../images/store.jpg);
+  margin-top: 15px;
+  position  : relative;
+  border    : 5px solid white;
+}
+/* медиа запросы для блока, чтобы он при определенных значениях дисплея сдвигался в нужную область */
+@media (min-width: 0) and (max-width: 767px){
+  .nowIsOpen{
+    margin-top: 30px;
+  }
+  .textOpen span{
+    font-size: 43px;  /* не меняется размер шрифта */
+  }
+}
+.textOpen span{
+  font-family   : Raleway-heavy, sans-serif;
+  font-size     : 36px;
+  font-weight   : 400;
+  font-style    : italic;
+  line-height   : 36px;
+  text-transform: uppercase;
+  top           : 180px;
+  right         : 0px;
+  position      : absolute
+} 
+.contentNewProducts, .contenTopProducts, .contenSaleProducts{
+  height          : 78px;
+  width           : 100%;
+  line-height     : 78px;
+  padding         : 0 25px;
+  box-sizing      : border-box;
+  background-color: #f8f8f8;
+  font-family     : Roboto-black-italic, sans-serif;
+  color           : #707070;
+  font-size       : 22px;
+  text-transform  : uppercase;
+  margin-bottom   : 20px;
+}
+
+@media (min-width: 0) and (max-width: 767px){
+  .contentNewProducts{
+    margin-top: 20px;
+  }
+}
+
+.productUnit {
+  background-color: red;
+  margin-bottom   : 30px;
+  padding         : 10px;
+  box-sizing      : border-box;
+  position        : relative;
+}
+
+.productImg{
+width        : 100%;
+margin-bottom: 10px;
+}
+
+.productNameAndCoast{
+display        : flex;
+flex-direction : row;
+justify-content: space-between;
+align-items    : flex-start;
+min-height     : 45px;
+}
+
+.cornerNew{
+  position: absolute;
+  top     : 0;
+  right   : 0px;
+}
+.cornerHot{
+  position: absolute;
+  top     : 0;
+  right   : 0px;
+}
+
+.productName{
+  color      : #333333;
+  font-family: Roboto-black-italic, sans-serif;
+  font-size  : 14px;
+  font-weight: 400;
+  line-height: 18px;
+  overflow   : hidden;
+}
+
+.productCoast{
+  color      : #333333;
+  font-family: Roboto-black-italic, sans-serif;
+  font-size  : 18px;
+  font-weight: 400;
+}
+.oldCoast{
+  color          : #e24602;
+  text-decoration: line-through;
+  font-size      : 14px;
+  font-weight    : 400;
+  font-family    : Roboto-black-italic, sans-serif;
+}
+
+@media all and (min-width: 540px) and (max-width: 767px){
+  .productUnitCol{
+    float: left;
+    width: 50%;
+  }
+}
+
+.brandsContainer{
+  background : white;
+  align-items: center;
+  padding    : 30px 15px;
+}
+.brandsPosition{
+  margin-left: 120px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+  .brandsPosition{
+    margin-left: 70px;
+}
+
+@media (min-width: 768) and (max-width: 991px){
+  .brandsPosition{
+    margin-left: 50px;  /* не работает !!!!*/
+  }
+}
+
+}
+@media (min-width: 0) and (max-width: 767px){
+  .brandsPosition{
+    margin-left: -10px;
+  }
+}
+
+
+/* .brandsContainer{
+  background     : white;
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: space-between;
+  align-items    : center;
+  padding        : 40px 15px;} */
