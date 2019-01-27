@@ -1,0 +1,560 @@
+@import "_variable";
+
+body {
+    margin          : 0;
+    background-color: #f8f8f8;
+}
+
+.header {
+    height         : 700px;
+    background     : url(../images/indexBack.jpg) center center;
+    background-size: cover;
+    .mediaRespond(0, 767px,{
+        height: 850px;
+    });
+    .container {
+        position: relative;
+        .logo {
+        background: url(../images/surfhouse_logo.png) no-repeat;
+        width     : 125px;
+        height    : 111px;
+        display   : block;
+        position  : absolute;
+        left      : 69px;
+        top       : 24px;
+        }
+        .socialIcons {
+            width          : 130px;
+            display        : flex;
+            justify-content: space-between;
+            position       : absolute;
+            top            : 50px;
+            right          : 58px;
+            color          : white;
+            .mediaRespond(0, 767px,{
+                left : 15px;
+                top  : 70px;
+                width: 270px;
+            });
+            i {
+                font-size: 20px;
+                .mediaRespond(0, 767px,{
+                    color    : #fff51f;
+                    font-size: 33px;
+            });
+            }
+        }
+        .greetingBlock {
+            background: #fff51f;
+            width     : 270px;
+            height    : 300px;
+            position  : absolute;
+            top       : 336px;
+            .mediaRespond(768px, 991px,{
+                top: 243px;
+            });
+            .mediaRespond(0, 767px,{
+                top : 111px;
+                left: 15px
+            });
+            .welcomeShop {
+                color         : #333333;
+                font-family   : Raleway-bold, sans-serif;
+                font-size     : 30px;
+                line-height   : 30px;
+                text-transform: uppercase;
+                padding       : 82px 25px 0px 25px;
+                box-sizing    : border-box;
+            }
+            .greetingWord {
+                font-family: Raleway-bold, sans-serif;
+                font-style : italic;
+                line-height: 14px;
+                font-size  : 18px;
+                margin-top : 24px;
+                margin-left: 25px;
+            }
+        }
+        .funrideWrap {
+            width   : 315px;
+            height  : 169px;
+            position: absolute;
+            top     : 243px;
+            right   : 50px;
+            .mediaRespond(0, 767px,{
+                top : 430px;
+                left: 15px;
+            });
+            .funrideHead {
+                color         : #fff51f;
+                font-family   : Raleway-extrabold, sans-serif;
+                font-size     : 48px;
+                line-height   : 34px;
+                text-transform: uppercase;
+            }
+            .funrideDescription {
+                font-family: Raleway-regular, sans-serif;
+                font-weight: 400;
+                line-height: 24px;
+                color      : #fff51f;
+                font-size  : 18px;
+                margin-top : 5px;
+            }
+        }
+        .buttonBuyNow {
+            display         : block;
+            position        : absolute;
+            width           : 124px;
+            height          : 49px;
+            background-color: #fff51f;
+            top             : 475px;
+            right           : 240px;
+            color           : #000000;
+            font-family     : Raleway-heavy, sans-serif;
+            font-size       : 14px;
+            font-weight     : 400;
+            text-transform  : uppercase;
+            text-decoration : none;
+            line-height     : 49px;
+            text-align      : center;
+            .mediaRespond(0, 767px,{
+                top : 630px;
+                left: 15px;
+            });
+            &:hover {
+                color           : #fff51f;
+                background-color: #000000;
+                .mediaRespond(0, 767px,{
+                    top : 630px;
+                    left: 15px;
+                });
+            }
+        }
+        .navBarXs {
+            border : none;
+            margin : 0 -15px;
+            z-index: 1;
+            /* меню поверх блоков */
+        }
+        .navbar-header{
+            .navBarXsLogo.navbar-brand {
+                font-size      : 20px;
+                font-family    : Roboto-black, sans-serif;
+                text-transform : uppercase;
+                color          : black;
+                background     : url(../images/surfhouse_logowithoutbrand.png) no-repeat 15px center;
+                background-size: 20%;
+                padding-left   : 55px;
+            }
+        }
+        .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+            background-color: #fff51f;
+        }
+        .navbar, .navbar-default, .visible-xs, .navBarXs {
+            background: #fff51f;
+        }
+        .navbar-header, .navbar-nav, .navbar-collapse {
+            background-color: #fff51f
+        }
+        .navbar-nav{
+            a {
+                color: #333333;
+            }
+        }
+    }
+}
+
+.content {
+    margin-top: -20px;
+    .mainMenu {
+        background-color: #26d2fc;
+        margin          : 0;
+        padding         : 0;
+        list-style      : none;
+        li {
+            width : 100%;
+            height: 36px;
+            a {
+                display        : block;
+                height         : inherit;
+                text-transform : uppercase;
+                font-family    : Roboto-black, sans-serif;
+                font-size      : 14px;
+                color          : #333333;
+                text-decoration: none;
+                padding        : 0 40px;
+                box-sizing     : border-box;
+                line-height    : 36px;
+                &:hover {
+                    background-color: #333333;
+                    color           : white;
+                }
+            }
+            &:first-child {
+                height          : 66px;
+                background-color: #333333;
+                a {
+                    color      : #fff;
+                    line-height: 66px;
+                }
+            }
+        }
+    }
+    .nowIsOpen {
+        height    : 300px;
+        background: url(../images/store.jpg);
+        margin-top: 15px;
+        position  : relative;
+        border    : 5px solid white;
+        .textOpen{
+            span {
+                font-family   : Raleway-heavy, sans-serif;
+                font-size     : 36px;
+                font-weight   : 400;
+                font-style    : italic;
+                line-height   : 36px;
+                text-transform: uppercase;
+                top           : 180px;
+                right         : 0px;
+                position      : absolute;
+                .mediaRespond(0, 767px,{
+                    font-size: 50px;
+                });
+            }
+        }
+        .mediaRespond(0, 767px,{
+            margin-top: 30px;
+        });
+    }
+
+/*     тут у меня идут три класса contentNewProducts contenTopProducts contenSaleProducts,
+    в которых другие классы с одинаковыми стилями. задача такая, нужно только одиному классу contentNewProducts
+    сделать медиа запрос. как сделать это правильно? я поступил так:  добавил новый класс 
+    с именем shifting и ему задал медиа запрос. */
+    @contentProductSet:{
+        height          : 78px;
+        width           : 100%;
+        line-height     : 78px;
+        padding         : 0 25px;
+        box-sizing      : border-box;
+        background-color: #f8f8f8;
+        font-family     : Roboto-black-italic, sans-serif;
+        color           : #707070;
+        font-size       : 22px;
+        text-transform  : uppercase;
+        margin-bottom   : 20px;
+    };
+    .contentNewProducts, .contenTopProducts, .contenSaleProducts {
+        @contentProductSet();
+    }
+    .shifting{
+    .mediaRespond(0, 767px,{
+        margin-top: 20px;
+    });
+    }
+
+    .productUnitCol{
+        .productUnit {
+            background-color: #ffffff;
+            margin-bottom   : 30px;
+            padding         : 10px;
+            box-sizing      : border-box;
+            position        : relative;
+        }
+        .cornerNew {
+            position: absolute;
+            top     : 0;
+            right   : 0px;
+        }
+        .cornerHot {
+            position: absolute;
+            top     : 0;
+            right   : 0px;
+        }
+        .productImg {
+            width        : 100%;
+            margin-bottom: 10px;
+        }
+        .productNameAndCost {
+            display        : flex;
+            flex-direction : row;
+            justify-content: space-between;
+            align-items    : flex-start;
+            min-height     : 46px;
+            .productName {
+                color      : #333333;
+                font-family: Roboto-black-italic, sans-serif;
+                font-size  : 14px;
+                font-weight: 400;
+                line-height: 18px;
+                overflow   : hidden;
+            }
+            .productCost {
+                color      : #333333;
+                font-family: Roboto-black-italic, sans-serif;
+                font-size  : 18px;
+                font-weight: 400;
+            }
+            .oldCost {
+                color          : #e24602;
+                text-decoration: line-through;
+                font-size      : 14px;
+                font-weight    : 400;
+                font-family    : Roboto-black-italic, sans-serif;
+            }
+        }
+        .mediaRespond(540px, 767px,{
+            float: left;
+            width: 50%;
+        });
+    }
+    .brandsContainer {
+        background : white;
+        align-items: center;
+        padding    : 30px 15px;
+        .brandsPosition {
+            margin-left: 120px;
+            img {
+                margin: 5px;
+            }
+            .mediaRespond(992px, 1200px,{
+                margin-left: 70px;
+            });
+            .mediaRespond(768px, 991px,{
+                margin-left: 50px;
+            });
+            .mediaRespond(0, 767px,{
+                margin-left: 20px;
+            });
+        }
+    }
+    .instaFeed {
+        background: #eaeaea;
+        padding   : 50px 0;
+        box-sizing: border-box;
+        .instaFeedHead {
+            width      : 100%;
+            font-family: Roboto-black-italic, sans-serif;
+            text-align : center;
+            font-size  : 18px;
+            i {
+                font-size  : 32px;
+                font-weight: bold;
+                position   : relative;
+                top        : 5px;
+            }
+            span {
+                font-family: Roboto-black-italic, sans-serif;
+                font-size  : 22px;
+            }
+        }
+        .instaFeedImage {
+            margin-top     : 29px;
+            display        : flex;
+            flex-wrap      : wrap;
+            justify-content: space-around;
+            img {
+                margin: 2px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .socialBlocks {
+        display       : flex;
+        flex-direction: row;
+        .mediaRespond(0, 767px,{
+            flex-direction: column;
+            align-items   : stretch;
+        });
+        .socialFacebook {
+            width     : 390px;
+            height    : 150px;
+            background: #3b5997;
+            font-size : 64px;
+            text-align: center;
+            .mediaRespond(0, 767px,{
+                width: auto;
+            });
+        }
+        .socialTwitter {
+            width     : 390px;
+            height    : 150px;
+            background: #3fccfd;
+            font-size : 64px;
+            text-align: center;
+            .mediaRespond(0, 767px,{
+                width: auto;
+            });
+        }
+        .socialPinterest {
+            width     : 390px;
+            height    : 150px;
+            background: #cb2027;
+            font-size : 64px;
+            text-align: center;
+            .mediaRespond(0, 767px,{
+                width: auto;
+            });
+        }
+        a {
+            color      : white;
+            line-height: 150px;
+        }
+    }
+}
+.footer {
+    min-height      : 340px;
+    background-color: rgb(59, 59, 59);
+    color           : white;
+    text-align      : justify;
+    .container:before{
+        display: none;
+    }
+    .container:after{
+        display: none;
+    }
+    .footerContainer {
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-between;
+        flex-wrap      : wrap;
+        .footerColumn{
+            .mediaRespond(0, 991px,{
+                flex-grow: 1;
+                padding  : 10px;
+            });
+            .columnHead {
+                font-family: Raleway-extrabold, sans-serif;
+                font-size  : 18px;
+                color      : white;
+                margin-top : 80px;
+            }
+            .columnLinks {
+                margin-top: 33px;
+                a {
+                    display        : block;
+                    color          : white;
+                    text-decoration: none;
+                    font-family    : Roboto-regular, sans-serif;
+                    font-size      : 12px;
+                    margin-bottom  : 4px;
+                    &:hover {
+                        color: #fff51f;
+                    }
+                }
+            }
+            .columnNewsLetter {
+                font-family: Roboto-regular, sans-serif;
+                color      : white;
+                font-size  : 12px;
+                margin-top : 4px;
+                width      : 270px;
+            }
+            input {
+                background: #fff51f;
+                margin-top: 20px;
+                width     : 180px;
+                height    : 30px;
+                border    : none;
+                outline   : none;
+                padding   : 0 21px;
+                box-sizing: border-box;
+                float     : left;
+                color     : black;
+            }
+            button {
+                width      : 70px;
+                height     : 30px;
+                background : black;
+                color      : white;
+                font-family: Roboto-regular, sans-serif;
+                font-size  : 12px;
+                border     : none;
+                outline    : none;
+                margin-top : 20px;
+                &:hover {
+                    background: white;
+                    color     : black;
+                    outline   : none;
+                }
+            }
+            .payCards {
+                margin-top     : 45px;
+                display        : flex;
+                flex-direction : row;
+                justify-content: space-between;
+            }
+            .phoneAboutUs {
+                margin-top : 17px;
+                font-family: Roboto-regular, sans-serif;
+                color      : white;
+                font-size  : 14px;
+                span {
+                    margin-right: 18px;
+                }
+            }
+            .emailAboutUs {
+                margin-top: 17px;
+                span {
+                    font-family : Roboto-regular, sans-serif;
+                    color       : white;
+                    font-size   : 14px;
+                    margin-right: 18px;
+                }
+                a {
+                    text-decoration: none;
+                    color          : #faef03;
+                    font-family    : Roboto-regular, sans-serif;
+                    font-size      : 14px;
+                }
+            }
+        }
+        .about {
+            width: 238px;
+        }
+    }
+    .footerCopyright {
+        background: #333333;
+        &>.container:before,
+        &>.container:after {
+            display: none;
+        }
+        .copyrightInside {
+            min-height     : 47px;
+            display        : flex;
+            flex-direction : row;
+            justify-content: space-between;
+            align-items    : center;
+            &>div {
+                min-height: inherit;
+            }
+            .footerRights {
+                font-family: Roboto-regular, sans-serif;
+                font-size  : 12px;
+                color      : white;
+                line-height: 47px;
+                span {
+                    text-transform: uppercase;
+                }
+            }
+            .footerSocialIcons {
+                color          : white;
+                font-size      : 15px;
+                display        : flex;
+                flex-direction : row;
+                justify-content: space-between;
+                width          : 184px;
+                align-items    : center;
+            }
+            .mediaRespond(0, 991px,{
+                flex-direction : column;
+                justify-content: space-around;
+            });
+        }
+    }
+}

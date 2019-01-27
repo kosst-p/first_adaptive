@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Raleway-bold';
+    src        : url('../fonts/raleway-bold.ttf')
+}
+
+@font-face {
+    font-family: 'Raleway-extrabold';
+    src        : url('../fonts/raleway-extrabold.ttf')
+}
+
+@font-face {
+    font-family: 'Raleway-regular';
+    src        : url('../fonts/raleway-regular.ttf')
+}
+
+@font-face {
+    font-family: 'Raleway-heavy';
+    src        : url('../fonts/raleway-heavy.ttf')
+}
+
+@font-face {
+    font-family: 'Raleway-black';
+    src        : url('../fonts/raleway-black.ttf')
+}
+
+@font-face {
+    font-family: 'Roboto-black';
+    src        : url('../fonts/roboto-black.ttf')
+}
+
+@font-face {
+    font-family: 'Roboto-black-italic';
+    src        : url('../fonts/roboto-black-italic.ttf')
+}
+
+@font-face {
+    font-family: 'Roboto-regular';
+    src        : url('../fonts/roboto-regular.ttf')
+}
+
+.mediaRespond(@_minWidth, @_maxWidth, @_styles) {
+    @media (min-width: @_minWidth) and (max-width: @_maxWidth) {
+        @_styles();
+    }
+} 

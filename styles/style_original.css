@@ -1,0 +1,710 @@
+body {
+    margin          : 0;
+    background-color: #f8f8f8;
+}
+
+@font-face {
+    font-family: 'Raleway-bold';
+    src        : url('../fonts/raleway-bold.ttf')
+}
+
+@font-face {
+    font-family: 'Raleway-extrabold';
+    src        : url('../fonts/raleway-extrabold.ttf')
+}
+
+@font-face {
+    font-family: 'Raleway-regular';
+    src        : url('../fonts/raleway-regular.ttf')
+}
+
+@font-face {
+    font-family: 'Raleway-heavy';
+    src        : url('../fonts/raleway-heavy.ttf')
+}
+
+@font-face {
+    font-family: 'Raleway-black';
+    src        : url('../fonts/raleway-black.ttf')
+}
+
+@font-face {
+    font-family: 'Roboto-black';
+    src        : url('../fonts/roboto-black.ttf')
+}
+
+@font-face {
+    font-family: 'Roboto-black-italic';
+    src        : url('../fonts/roboto-black-italic.ttf')
+}
+
+@font-face {
+    font-family: 'Roboto-regular';
+    src        : url('../fonts/roboto-regular.ttf')
+}
+
+.header {
+    height         : 700px;
+    background     : url(../images/indexBack.jpg) center center;
+    background-size: cover;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+    /* медиа запросы для блока, чтобы он при определенных значениях дисплея сдвигался в нужную область */
+    .header {
+        height: 850px;
+    }
+}
+
+.header>.container {
+    position: relative;
+}
+
+.logo {
+    background: url(../images/surfhouse_logo.png) no-repeat;
+    width     : 125px;
+    height    : 111px;
+    display   : block;
+    position  : absolute;
+    left      : 69px;
+    top       : 24px;
+}
+
+.socialIcons {
+    width          : 130px;
+    display        : flex;
+    justify-content: space-between;
+    position       : absolute;
+    top            : 50px;
+    right          : 58px;
+    color          : white;
+}
+
+.socialIcons i {
+    font-size: 20px;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+    /* медиа запросы для блока, чтобы он при определенных значениях дисплея сдвигался в нужную область */
+    .socialIcons {
+        left : 15px;
+        top  : 70px;
+        width: 270px;
+    }
+    .socialIcons i {
+        color    : #fff51f;
+        font-size: 33px;
+    }
+}
+
+.greetingBlock {
+    background: #fff51f;
+    width     : 270px;
+    height    : 300px;
+    position  : absolute;
+    top       : 336px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* медиа запросы для блока, чтобы он при определенных значениях дисплея сдвигался в нужную область */
+    .greetingBlock {
+        top: 243px;
+    }
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+    .greetingBlock {
+        top : 111px;
+        left: 15px;
+    }
+}
+
+.welcomeShop {
+    color         : #333333;
+    font-family   : Raleway-bold, sans-serif;
+    font-size     : 30px;
+    line-height   : 30px;
+    text-transform: uppercase;
+    padding       : 82px 25px 0px 25px;
+    box-sizing    : border-box;
+}
+
+.greetingWord {
+    font-family: Raleway-bold, sans-serif;
+    font-style : italic;
+    line-height: 14px;
+    font-size  : 18px;
+    margin-top : 24px;
+    margin-left: 25px;
+}
+
+.funrideWrap {
+    width   : 315px;
+    height  : 169px;
+    position: absolute;
+    top     : 243px;
+    right   : 50px;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+    /* медиа запросы для блока, чтобы он при определенных значениях дисплея сдвигался в нужную область */
+    .funrideWrap {
+        top : 430px;
+        left: 15px;
+    }
+}
+
+.funrideHead {
+    color         : #fff51f;
+    font-family   : Raleway-extrabold, sans-serif;
+    font-size     : 48px;
+    line-height   : 34px;
+    text-transform: uppercase;
+}
+
+.funrideDescription {
+    font-family: Raleway-regular, sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    color      : #fff51f;
+    font-size  : 18px;
+    margin-top : 5px;
+}
+
+.buttonBuyNow {
+    display         : block;
+    position        : absolute;
+    width           : 124px;
+    height          : 49px;
+    background-color: #fff51f;
+    top             : 475px;
+    right           : 240px;
+    color           : #000000;
+    font-family     : Raleway-heavy, sans-serif;
+    font-size       : 14px;
+    font-weight     : 400;
+    text-transform  : uppercase;
+    text-decoration : none;
+    line-height     : 49px;
+    text-align      : center;
+}
+
+.buttonBuyNow:hover {
+    color           : #fff51f;
+    background-color: #000000;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+    /* медиа запросы для блока, чтобы он при определенных значениях дисплея сдвигался в нужную область */
+    .buttonBuyNow, .buttonBuyNow:hover {
+        top : 630px;
+        left: 15px;
+    }
+}
+
+.navBarXs {
+    border : none;
+    margin : 0 -15px;
+    z-index: 1;
+    /* меню поверх блоков */
+}
+
+.navBarXsLogo.navbar-brand {
+    font-size      : 20px;
+    font-family    : Roboto-black, sans-serif;
+    text-transform : uppercase;
+    color          : black;
+    background     : url(../images/surfhouse_logowithoutbrand.png) no-repeat 15px center;
+    background-size: 20%;
+    padding-left   : 55px;
+}
+
+.navbar, .navbar-default, .visible-xs, .navBarXs {
+    background: white;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: white;
+}
+.navbar-header, .navbar-nav, .navbar-collapse {
+    background-color: #fff51f
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #333333;
+}
+
+.content {
+    margin-top: -20px;
+}
+
+.mainMenu {
+    background-color: #26d2fc;
+    margin          : 0;
+    padding         : 0;
+    list-style      : none;
+}
+
+.mainMenu li {
+    width : 100%;
+    height: 36px;
+}
+
+.mainMenu li a {
+    display        : block;
+    height         : inherit;
+    text-transform : uppercase;
+    font-family    : Roboto-black, sans-serif;
+    font-size      : 14px;
+    color          : #333333;
+    text-decoration: none;
+    padding        : 0 40px;
+    box-sizing     : border-box;
+    line-height    : 36px;
+}
+
+.mainMenu li a:hover {
+    background-color: #333333;
+    color           : white;
+}
+
+.mainMenu li:first-child {
+    height          : 66px;
+    background-color: #333333;
+}
+
+.mainMenu li:first-child a {
+    color      : #fff;
+    line-height: 66px;
+}
+
+.nowIsOpen {
+    height    : 300px;
+    background: url(../images/store.jpg);
+    margin-top: 15px;
+    position  : relative;
+    border    : 5px solid white;
+}
+
+.textOpen span {
+    font-family   : Raleway-heavy, sans-serif;
+    font-size     : 36px;
+    font-weight   : 400;
+    font-style    : italic;
+    line-height   : 36px;
+    text-transform: uppercase;
+    top           : 180px;
+    right         : 0px;
+    position      : absolute
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+    /* медиа запросы для блока, чтобы он при определенных значениях дисплея сдвигался в нужную область */
+    .nowIsOpen {
+        margin-top: 30px;
+    }
+    .textOpen span {
+        font-size: 50px;
+    }
+}
+
+.contentNewProducts, .contenTopProducts, .contenSaleProducts {
+    height          : 78px;
+    width           : 100%;
+    line-height     : 78px;
+    padding         : 0 25px;
+    box-sizing      : border-box;
+    background-color: #f8f8f8;
+    font-family     : Roboto-black-italic, sans-serif;
+    color           : #707070;
+    font-size       : 22px;
+    text-transform  : uppercase;
+    margin-bottom   : 20px;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+    .contentNewProducts {
+        margin-top: 20px;
+    }
+}
+
+.productUnit {
+    background-color: #ffffff;
+    margin-bottom   : 30px;
+    padding         : 10px;
+    box-sizing      : border-box;
+    position        : relative;
+}
+
+.cornerNew {
+    position: absolute;
+    top     : 0;
+    right   : 0px;
+}
+
+.cornerHot {
+    position: absolute;
+    top     : 0;
+    right   : 0px;
+}
+
+
+.productImg {
+    width        : 100%;
+    margin-bottom: 10px;
+}
+
+.productNameAndCost {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : flex-start;
+    min-height     : 46px;
+}
+
+
+.productName {
+    color      : #333333;
+    font-family: Roboto-black-italic, sans-serif;
+    font-size  : 14px;
+    font-weight: 400;
+    line-height: 18px;
+    overflow   : hidden;
+}
+
+.productCost {
+    color      : #333333;
+    font-family: Roboto-black-italic, sans-serif;
+    font-size  : 18px;
+    font-weight: 400;
+}
+
+.oldCost {
+    color          : #e24602;
+    text-decoration: line-through;
+    font-size      : 14px;
+    font-weight    : 400;
+    font-family    : Roboto-black-italic, sans-serif;
+}
+
+@media all and (min-width: 540px) and (max-width: 767px) {
+    .productUnitCol {
+        float: left;
+        width: 50%;
+    }
+}
+
+.brandsContainer {
+    background : white;
+    align-items: center;
+    padding    : 30px 15px;
+}
+
+.brandsPosition img {
+    margin: 5px;
+}
+
+.brandsPosition {
+    margin-left: 120px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .brandsPosition {
+        margin-left: 70px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .brandsPosition {
+        margin-left: 50px;
+    }
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+    .brandsPosition {
+        margin-left: 20px;
+    }
+}
+
+.instaFeed {
+    background: #eaeaea;
+    padding   : 50px 0;
+    box-sizing: border-box;
+}
+
+.instaFeedHead {
+    width      : 100%;
+    font-family: Roboto-black-italic, sans-serif;
+    text-align : center;
+    font-size  : 18px;
+}
+
+.instaFeedHead i {
+    font-size  : 32px;
+    font-weight: bold;
+    position   : relative;
+    top        : 5px;
+}
+
+.instaFeedHead span {
+    font-family: Roboto-black-italic, sans-serif;
+    font-size  : 22px;
+}
+
+.instaFeedImage {
+    margin-top     : 29px;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-around;
+}
+
+.instaFeedImage img {
+    margin: 2px;
+}
+
+.instaFeedImage img:first-child {
+    margin-left: 0;
+}
+
+.instaFeedImage img:last-child {
+    margin-right: 0;
+}
+
+.socialBlocks {
+    display       : flex;
+    flex-direction: row
+}
+
+@media (min-width:0) and (max-width: 767px) {
+    .socialBlocks {
+        flex-direction: column;
+        align-items   : stretch;
+    }
+}
+
+.socialFacebook {
+    width     : 390px;
+    height    : 150px;
+    background: #3b5997;
+    font-size : 64px;
+    text-align: center;
+}
+
+.socialTwitter {
+    width     : 390px;
+    height    : 150px;
+    background: #3fccfd;
+    font-size : 64px;
+    text-align: center;
+}
+
+.socialPinterest {
+    width     : 390px;
+    height    : 150px;
+    background: #cb2027;
+    font-size : 64px;
+    text-align: center;
+}
+
+@media (min-width:0) and (max-width: 767px) {
+    .socialFacebook, .socialTwitter, .socialPinterest {
+        width: auto;
+    }
+}
+
+.socialBlocks a {
+    color      : white;
+    line-height: 150px;
+}
+
+.footer {
+    min-height      : 340px;
+    background-color: rgb(59, 59, 59);
+    color           : white;
+    text-align      : justify;
+}
+
+.footer>.container:before, .footer>.container:after {
+    display: none;
+}
+
+.footerContainer {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    flex-wrap      : wrap;
+}
+
+@media (min-width:0) and (max-width:991px) {
+    .footerColumn {
+        flex-grow: 1;
+        padding  : 10px;
+    }
+}
+
+.columnHead {
+    font-family: Raleway-extrabold, sans-serif;
+    font-size  : 18px;
+    color      : white;
+    margin-top : 80px;
+}
+
+.columnLinks {
+    margin-top: 33px;
+}
+
+.columnLinks a {
+    display        : block;
+    color          : white;
+    text-decoration: none;
+    font-family    : Roboto-regular, sans-serif;
+    font-size      : 12px;
+    margin-bottom  : 4px;
+}
+
+.columnLinks a:hover {
+    color: #fff51f;
+}
+
+.columnNewsLetter {
+    font-family: Roboto-regular, sans-serif;
+    color      : white;
+    font-size  : 12px;
+    margin-top : 4px;
+    width      : 270px;
+}
+
+.footerColumn input {
+    background: #fff51f;
+    margin-top: 20px;
+    width     : 180px;
+    height    : 30px;
+    border    : none;
+    outline   : none;
+    padding   : 0 21px;
+    box-sizing: border-box;
+    float     : left;
+    color     : black;
+}
+
+.footerColumn button {
+    width      : 70px;
+    height     : 30px;
+    background : black;
+    color      : white;
+    font-family: Roboto-regular, sans-serif;
+    font-size  : 12px;
+    border     : none;
+    outline    : none;
+    margin-top : 20px;
+}
+
+.footerColumn button:hover {
+    background: white;
+    color     : black;
+    outline   : none;
+}
+
+.payCards {
+    margin-top     : 45px;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+}
+
+.about {
+    width: 238px;
+}
+
+.columnText {
+    font-family: Roboto-regular, sans-serif;
+    color      : white;
+    font-size  : 12px;
+    margin-top : 4px;
+    text-align : justify;
+}
+
+.phoneAboutUs {
+    margin-top : 17px;
+    font-family: Roboto-regular, sans-serif;
+    color      : white;
+    font-size  : 14px;
+}
+
+.phoneAboutUs span {
+    margin-right: 18px;
+}
+
+.emailAboutUs span {
+    font-family : Roboto-regular, sans-serif;
+    color       : white;
+    font-size   : 14px;
+    margin-right: 18px;
+}
+
+.emailAboutUs {
+    margin-top: 17px;
+}
+
+.emailAboutUs a {
+    text-decoration: none;
+    color          : #faef03;
+    font-family    : Roboto-regular, sans-serif;
+    font-size      : 14px;
+}
+
+.footerCopyright {
+    background: #333333;
+}
+
+.copyrightInside {
+    min-height     : 47px;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.copyrightInside>div {
+    min-height: inherit;
+}
+
+.footerCopyright>.container:before, .footerCopyright>.container:after {
+    display: none;
+}
+
+.footerRights span {
+    text-transform: uppercase;
+}
+
+.footerRights {
+    font-family: Roboto-regular, sans-serif;
+    font-size  : 12px;
+    color      : white;
+    line-height: 47px;
+}
+
+.footerSocialIcons {
+    color          : white;
+    font-size      : 15px;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    width          : 184px;
+    align-items    : center;
+}
+
+@media (min-width: 0px) and (max-width: 991px) {
+    .copyrightInside {
+        flex-direction : column;
+        justify-content: space-around;
+    }
+}
+
+.navbar-header, .navbar-nav, .navbar-collapse {
+    background-color: #fff51f
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #333333;
+}
